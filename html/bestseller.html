@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="reese (13).png">
+    <link rel="stylesheet" href="bestseller.css">
+    <script>src="/Js/index.js" </script>
+    <title>BESTSELLER</title>
+
+</head>
+<body class="body">
+<header class="header">
+    <navbar  class="navbar" >
+        <a href="HandyByAlae.html"><div class="Handy"><h1>Handy</h1></div>
+            <h3 class="by">ByAlae</h3></a>
+            <div class="links">
+                <ul  >
+                    <li type="none"><a href="HandyByAlae.html" >HOME</a></li>
+                    <li type="none"><a href="article.html" >NEW</a></li>
+                    <li type="none"><a href="bestseller.html" id="NEW" >BEST SELLER</a></li>
+                    <li type="none"><a href="earrings.html">EARRINGS</a></li>
+                    <li type="none"><a href="necklaces.html">NECKLACES</a></li>
+                    <li type="none"><a href="/php/contactus.php" target="_blank">CONTACT US</a></li>
+                </ul>
+                </div>
+                <div class="cute">
+
+                    <ul >   <li type="none">
+                        <button aria-label="Search" class="search" type="search" onclick="toggleSearch()">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.8271 19.047L15.6287 15.0642C16.6556 13.8448 17.2174 12.3067 17.216 10.7186C17.2285 8.95062 16.5323 7.25003 15.2802 5.99032C14.0281 4.7306 12.3225 4.01475 10.5381 4C8.78206 4.06474 7.11972 4.80141 5.90046 6.05518C4.68121 7.30895 4 8.98219 4 10.7232C4 12.4643 4.68121 14.1375 5.90046 15.3913C7.11972 16.645 8.78206 17.3817 10.5381 17.4464C12.1172 17.4481 13.6442 16.8865 14.8398 15.8645L19.0569 19.8473C19.164 19.9484 19.3073 20.0033 19.4553 19.9998C19.6032 19.9964 19.7437 19.9348 19.8458 19.8287C19.948 19.7225 20.0034 19.5806 19.9998 19.434C19.9963 19.2874 19.9342 19.1482 19.8271 19.047ZM4.97788 10.672C4.97775 9.20407 5.56115 7.7951 6.60179 6.75014C7.64243 5.70518 9.05657 5.10832 10.5381 5.08874C12.0327 5.08874 13.4661 5.67698 14.5229 6.72405C15.5797 7.77112 16.1735 9.19126 16.1735 10.672C16.1735 12.1528 15.5797 13.573 14.5229 14.62C13.4661 15.6671 12.0327 16.2553 10.5381 16.2553C9.06467 16.2359 7.65752 15.6455 6.61819 14.6105C5.57886 13.5756 4.99003 12.1785 4.97788 10.7186V10.672Z" fill="currentColor"></path>
+                            </svg>
+                        </button>
+                        
+                        <div id="searchBlock">
+                            <input type="text" id="searchInput" placeholder="Find what you're looking for">
+                            <button onclick="toggleSearch()">X</button>
+                        </div></li>
+                    
+                        <script  language="javascript" src="toggle.js" >
+                        </script>
+                        <li type="none"> 
+                        <a href="/php/login.php" target="_blank"><button aria-label="Login" class="login" ><i><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.59 12.7801C15.5238 12.2146 16.2469 11.359 16.6488 10.3439C17.0508 9.32886 17.1094 8.21016 16.8158 7.15865C16.5223 6.10714 15.8926 5.18061 15.023 4.52055C14.1534 3.86049 13.0917 3.50317 12 3.50317C10.9083 3.50317 9.84656 3.86049 8.97698 4.52055C8.10739 5.18061 7.47774 6.10714 7.18417 7.15865C6.8906 8.21016 6.94925 9.32886 7.35116 10.3439C7.75308 11.359 8.47617 12.2146 9.41 12.7801C7.94638 13.3129 6.68183 14.2826 5.78752 15.5579C4.89322 16.8332 4.41235 18.3525 4.41 19.9101C4.41 20.0692 4.47322 20.2218 4.58574 20.3343C4.69826 20.4469 4.85087 20.5101 5.01 20.5101C5.16913 20.5101 5.32175 20.4469 5.43427 20.3343C5.54679 20.2218 5.61 20.0692 5.61 19.9101C5.61 18.2153 6.28323 16.59 7.48159 15.3917C8.67995 14.1933 10.3053 13.5201 12 13.5201C13.6947 13.5201 15.3201 14.1933 16.5184 15.3917C17.7168 16.59 18.39 18.2153 18.39 19.9101C18.39 19.9889 18.4055 20.0669 18.4357 20.1397C18.4658 20.2125 18.51 20.2786 18.5657 20.3343C18.6215 20.3901 18.6876 20.4342 18.7604 20.4644C18.8332 20.4946 18.9112 20.5101 18.99 20.5101C19.0688 20.5101 19.1468 20.4946 19.2196 20.4644C19.2924 20.4342 19.3586 20.3901 19.4143 20.3343C19.47 20.2786 19.5142 20.2125 19.5443 20.1397C19.5745 20.0669 19.59 19.9889 19.59 19.9101C19.5877 18.3525 19.1068 16.8332 18.2125 15.5579C17.3182 14.2826 16.0536 13.3129 14.59 12.7801ZM8.16 8.48008C8.16 7.7206 8.38522 6.97817 8.80716 6.34669C9.2291 5.7152 9.82883 5.22302 10.5305 4.93238C11.2322 4.64174 12.0043 4.56569 12.7492 4.71386C13.494 4.86203 14.1783 5.22775 14.7153 5.76479C15.2523 6.30182 15.6181 6.98604 15.7662 7.73093C15.9144 8.47582 15.8383 9.24791 15.5477 9.94958C15.2571 10.6513 14.7649 11.251 14.1334 11.6729C13.5019 12.0949 12.7595 12.3201 12 12.3201C10.9816 12.3201 10.0049 11.9155 9.28471 11.1954C8.56457 10.4" fill="currentColor"></path></svg></i></button></a>
+                    </li>
+                    <li type="none">
+                        <button aria-label="Wishlist" class="Wishlist"><i ><svg width="20" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ><path d="M11.7146 5.51791C11.2458 5.0361 10.6856 4.65352 10.067 4.39281C9.44844 4.1321 8.78408 3.99853 8.11321 4.00001C7.00951 4.00541 5.93704 4.36845 5.05543 5.03511C4.17383 5.70176 3.5302 6.6364 3.22036 7.6999C2.95042 8.59091 2.92805 9.53902 3.15565 10.4419C3.38325 11.3447 3.85219 12.168 4.51182 12.8228L11.1056 19.6323C11.3434 19.8679 11.664 20 11.9981 20C12.3322 20 12.6528 19.8679 12.8906 19.6323L19.5053 12.8228C20.1924 12.1331 20.669 11.2608 20.8792 10.3085C21.0893 9.35618 21.0243 8.36342 20.6918 7.44691C20.4128 6.62667 19.9294 5.89171 19.2876 5.31195C18.6459 4.73219 17.867 4.3269 17.0252 4.13463C16.1833 3.94236 15.3065 3.9695 14.478 4.21346C13.6496 4.45743 12.8971 4.91011 12.2921 5.52845L12.0191 5.83414L11.7041 5.51791H11.7146ZM11.5571 7.18339L12.0086 7.64719L12.4601 7.18339L13.216 6.4139C13.675 5.95518 14.2428 5.62143 14.8658 5.44413C15.4889 5.26684 16.1467 5.25185 16.7771 5.40058C17.4075 5.54932 17.9898 5.85687 18.469 6.29421C18.9482 6.73155 19.3085 7.28426 19.5158 7.90018C19.7589 8.59103 19.8021 9.33686 19.6404 10.0513C19.4788 10.7658 19.1189 11.4197 18.6024 11.9374L12.0191 18.7468L5.41479 11.9479C4.8709 11.4048 4.49887 10.7125 4.34536 9.95786C4.19185 9.20326 4.2637 8.41995 4.5519 7.70619C4.8401 6.99243 5.33181 6.37999 5.96537 5.94569C6.59892 5.51139 7.34611 5.27457 8.11321 5.26493C8.61614 5.26267 9.11436 5.36234 9.57803 5.55795C10.0417 5.75356 10.4613 6.04111 10.8116 6.40336L11.5676 7.18339" fill="currentColor"></path></svg></i></button></li>
+                    <li type="none">
+                        <button  aria-label=" Cart" id="basketButton">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.8941 9.31648C18.8549 9.26435 18.804 9.2225 18.7457 9.19438C18.6874 9.16627 18.6233 9.15271 18.5588 9.15483H14.8882C14.5372 8.13212 14.1094 7.13836 13.6088 6.18232C13.2992 5.58004 12.9136 5.02153 12.4618 4.52094C12.2907 4.34155 12.0829 4.20262 11.8532 4.11399C11.6235 4.02535 11.3775 3.98918 11.1325 4.00803C10.8875 4.02688 10.6497 4.10029 10.4357 4.22306C10.2217 4.34583 10.0368 4.51497 9.89411 4.71851C9.56882 5.19676 9.29378 5.70845 9.07352 6.24518C8.66862 7.19362 8.31803 8.16513 8.02352 9.15483H4.44116C4.37667 9.15271 4.31261 9.16627 4.2543 9.19438C4.19599 9.2225 4.1451 9.26435 4.10586 9.31648C4.06244 9.3658 4.03103 9.42483 4.01417 9.48879C3.9973 9.55276 3.99547 9.61986 4.0088 9.68468L5.77352 19.626C5.79019 19.7307 5.84276 19.826 5.9219 19.8951C6.00104 19.9641 6.10164 20.0024 6.20587 20.0032H16.7941C16.8971 20.0028 16.9967 19.9658 17.0756 19.8985C17.1546 19.8313 17.208 19.7381 17.2265 19.635L18.9912 9.68468C19.0045 9.61986 19.0027 9.55276 18.9858 9.48879C18.969 9.42483 18.9376 9.3658 18.8941 9.31648ZM9.87647 6.62236C10.0732 6.14085 10.3217 5.68304 10.6176 5.25733C10.6824 5.15774 10.7682 5.07417 10.8688 5.01275C10.9694 4.95134 11.0822 4.91365 11.199 4.90246C11.3158 4.89126 11.4336 4.90683 11.5437 4.94804C11.6538 4.98925 11.7535 5.05505 11.8353 5.14059C12.232 5.58696 12.5729 6.08166 12.85 6.61338C13.2751 7.43346 13.6437 8.28266 13.9529 9.15483H8.94999C9.2156 8.28025 9.52482 7.42 9.87647 6.57746V6.62236ZM16.4059 19.1949H6.54999L4.97057 10.0529H7.74999C7.59117 10.5648 7.44117 11.1036 7.27352 11.6873C7.25746 11.7445 7.25272 11.8044 7.25959 11.8635C7.26646 11.9225 7.28479 11.9796 7.31352 12.0314C7.34226 12.0832 7.38082 12.1287 7.42697 12.1652C7.47311 12.2017 7.52593 12.2285 7.58234 12.2441C7.63738 12.2605 7.69507 12.2656 7.75206 12.2591C7.80905 12.2525 7.86419 12.2346 7.91428 12.2061C7.96437 12.1777 8.00841 12.1394 8.04382 12.0935C8.07924 12.0476 8.10533 11.995 8.12058 11.9388C8.3147 11.2473 8.49999 10.6276 8.66764 10.0529H14.2706C14.4647 10.6366 14.6677 11.2652 14.8794 11.9477C14.9145 12.0668 14.9947 12.1668 15.1022 12.2258C15.2098 12.2847 15.3359 12.2978 15.453 12.2621C15.57 12.2263 15.6682 12.1448 15.7261 12.0353C15.7841 11.9258 15.7969 11.7974 15.7618 11.6783C15.5853 11.1036 15.4088 10.5648 15.2412 10.0529H18.0647L16.4059 19.1949Z" fill="currentColor"></path>
+                            </svg>
+                            <i class="add" id="cartCount">0</i>
+                        </button>
+                    
+                        <li type="none">
+                            <button class="menu-button" aria-label="Menu" onclick="toggleMenu()">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="4.5" y1="5.5" x2="19.5" y2="5.5" stroke="currentColor" stroke-linecap="round"></line>
+                                    <line x1="4.5" y1="11.5" x2="19.5" y2="11.5" stroke="currentColor" stroke-linecap="round"></line>
+                                    <line x1="4.5" y1="17.5" x2="19.5" y2="17.5" stroke="currentColor" stroke-linecap="round"></line>
+                                </svg>
+                            </button>            
+                                <div id="menuContent" class="menu-content">
+                                    <span class="close-btn" onclick="toggleMenu()">&times;</span>
+                                <h2>Menu</h2>
+                                <ul class="menu">
+                                    <li><a href="http://localhost/JEWELRY/login.php">login</a></li>
+                                    <li><a href="article.html">Collection</a></li>
+                                    <li><a href="bestseller.html">bestseller</a></li>
+                                    <li><a href="http://localhost/JEWELRY/contactus.php">Contact Us</a></li>
+                                </ul>
+                            </div></li>
+                    
+                </ul>
+            </navbar>  
+    
+    
+</header>
+
+
+<div>
+    <div class="text1">
+        <h3><em>Our Best seller !</em></h3>
+    </div>
+    
+    <div class="vide"></div>
+    <div class="pics3">
+        <div class="container">
+                <a href="www.facebook.com" target="_blank" class="wpic">
+                <img        src="neck2.jpg" alt="up" class="dpic3" ><h4 class="lpic">100$</h4></a>
+                <div class="middle">
+                    <div class="text">Buy now</div>
+                    </div>
+        </div>
+        <div class="container">
+            <a href="www.facebook.com" target="_blank" class="wpic">
+                <img src="ear5.jpg" alt="up" class="dpic3"><h4 class="lpic">80$</h4></a>
+                <div class="middle">
+                    <div class="text">Buy now</div>
+                    </div>
+        </div>
+        <div class="container">
+            <a href="www.facebook.com" target="_blank" class="wpic">
+                <img src="ring4.jpg" alt="up" class="dpic3" ><h4    class="lpic">180$</h4></a>
+                <div class="middle">
+                    <div class="text">Buy now</div>
+                    </div>
+    
+        </div>
+        <div class="container">  <a href="www.facebook.com" target="_blank" class="wpic">
+            <img src="ear3.jpg" alt="up" class="dpic3" ><h4 class="lpic">90$</h4></a>
+            <div class="middle">
+                <div class="text">Buy now</div>
+                </div>
+        
+        </div>
+    </div>
+        <!-- section one -->
+    <div class="videb"></div>
+    <div class="pics3">
+        <div class="container">
+                <a href="www.facebook.com" target="_blank" class="wpic">
+                <img        src="neck12.jpg" alt="up" class="dpic3" ><h4 class="lpic">190$</h4></a>
+                <div class="middle">
+                    <div class="text">Buy now</div>
+                    </div>
+        </div>
+        <div class="container">
+            <a href="www.facebook.com" target="_blank" class="wpic">
+                <img src="ear4.jpg" alt="up" class="dpic3"><h4 class="lpic">87$</h4></a>
+                <div class="middle">
+                    <div class="text">Buy now</div>
+                    </div>
+        </div>
+        <div class="container">
+            <a href="www.facebook.com" target="_blank" class="wpic">
+                <img src="ring3.jpg" alt="up" class="dpic3" ><h4 class="lpic">289$</h4></a>
+                <div class="middle">
+                    <div class="text">Buy now</div>
+                    </div>
+    
+        </div>
+        <div class="container">  
+            <a href="www.facebook.com" target="_blank" class="wpic">
+            <img src="ens1.jpg" alt="up" class="dpic3" ><h4 class="lpic">230$</h4></a>
+            <div class="middle">
+                <div class="text">Buy now</div>
+                </div>
+        </div>
+    </div>
+    <!-- section two -->
+    <div class="vide"></div>
+    <div class="pics3">
+        <div class="container">
+                <a href="www.facebook.com" target="_blank" class="wpic">
+                <img        src="neck13.jpg" alt="up" class="dpic3" ><h4 class="lpic">130$</h4></a>
+                <div class="middle">
+                    <div class="text">Buy now</div>
+                    </div>
+        </div>
+        <div class="container">
+            <a href="www.facebook.com" target="_blank" class="wpic">
+                <img src="ring5.jpg" alt="up" class="dpic3"><h4 class="lpic">250$</h4></a>
+                <div class="middle">
+                    <div class="text">Buy now</div>
+                    </div>
+        </div>
+        <div class="container">
+            <a href="www.facebook.com" target="_blank" class="wpic">
+                <img src="brac2.jpg" alt="up" class="dpic3" ><h4    class="lpic">45$</h4></a>
+                <div class="middle">
+                    <div class="text">Buy now</div>
+                    </div>
+    
+        </div>
+        <div class="container">  <a href="www.facebook.com" target="_blank" class="wpic">
+            <img src="set11.jpg" alt="up" class="dpic3" ><h4 class="lpic">240$</h4></a>
+            <div class="middle">
+                <div class="text">Buy now</div>
+                </div>
+        
+        </div>
+    </div>
+    <div class="videb"></div>
+</div>
+
+<footer class="footer">
+
+    <div class="pics4">
+        <div>
+                <a  class="wpic">
+                <img src="ear3.jpg" alt="up" class="dpic4" ></a>
+        </div>
+        <div >
+            <a   class="wpic">
+                    <img src="neck3.jpg" alt="up" class="dpic4"></a>
+        </div>
+        <div >
+            <a   class="wpic">
+                <img src="ring2.jpg" alt="up" class="dpic4"></a>
+        </div>
+    
+        <div >
+            <a   class="wpic">
+                        <img src="ear8.jpg" alt="up" class="dpic4"></a>
+        </div>
+        <div>
+            <a   class="wpic">
+                <img src="bracelet1.jpg" alt="up" class="dpic4"></a>
+        </div>
+        <div >
+            <a   class="wpic">
+                <img src="ear6.jpg" alt="up" class="dpic4"></a>
+        </div>
+    
+    </div>
+
+
+    <div class="forum">
+        <h1>HandyByAlae Newsletter </h1>
+        <h3> Be the first ones to know about our new designs.</h3>
+    <div class="bottons">
+    
+            <div class="email">
+                <input class="c12"
+                id="name"
+                placeholder="First name"
+                required=""
+                type="text"/></div>
+
+                    <div class="email">
+                        <input class="c12"
+                        id="name"
+                        placeholder="Last name"
+                        required=""
+                        type="text"/></div> 
+            
+
+                            <div class="email">
+                                <input class="c12"
+                                id="name"
+                                placeholder=" Email Address"
+                                required=""
+                                type="email"/></div>
+            </div>
+            <div class="submit">
+                <input class="c12"
+                id="name"
+                placeholder=" Send"
+                required=""
+                type="submit" value="Send"/></div>
+        </div>
+        
+    <div data-h="social-link" data-testid="social-link" class="socialm">
+        <a title="Facebook" href="https://www.facebook.com/profile.php?id=61553478833337&mibextid=ZbWKwL" target="_blank" rel="no-follow" data-h="footer-social-btn" data-testid="footer-social-btn" class="fb">
+        <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 28"><path d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z"></path></svg></a>
+        <a title="Instagram" href="https://www.instagram.com/" target="_blank" rel="no-follow" class="ig">
+        <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28"><path d="M16 14c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM18.156 14c0 3.406-2.75 6.156-6.156 6.156s-6.156-2.75-6.156-6.156 2.75-6.156 6.156-6.156 6.156 2.75 6.156 6.156zM19.844 7.594c0 0.797-0.641 1.437-1.437 1.437s-1.437-0.641-1.437-1.437 0.641-1.437 1.437-1.437 1.437 0.641 1.437 1.437zM12 4.156c-1.75 0-5.5-0.141-7.078 0.484-0.547 0.219-0.953 0.484-1.375 0.906s-0.688 0.828-0.906 1.375c-0.625 1.578-0.484 5.328-0.484 7.078s-0.141 5.5 0.484 7.078c0.219 0.547 0.484 0.953 0.906 1.375s0.828 0.688 1.375 0.906c1.578 0.625 5.328 0.484 7.078 0.484s5.5 0.141 7.078-0.484c0.547-0.219 0.953-0.484 1.375-0.906s0.688-0.828 0.906-1.375c0.625-1.578 0.484-5.328 0.484-7.078s0.141-5.5-0.484-7.078c-0.219-0.547-0.484-0.953-0.906-1.375s-0.828-0.688-1.375-0.906c-1.578-0.625-5.328-0.484-7.078-0.484zM24 14c0 1.656 0.016 3.297-0.078 4.953-0.094 1.922-0.531 3.625-1.937 5.031s-3.109 1.844-5.031 1.937c-1.656 0.094-3.297 0.078-4.953 0.078s-3.297 0.016-4.953-0.078c-1.922-0.094-3.625-0.531-5.031-1.937s-1.844-3.109-1.937-5.031c-0.094-1.656-0.078-3.297-0.078-4.953s-0.016-3.297 0.078-4.953c0.094-1.922 0.531-3.625 1.937-5.031s3.109-1.844 5.031-1.937c1.656-0.094 3.297-0.078 4.953-0.078s3.297-0.016 4.953 0.078c1.922 0.094 3.625 0.531 5.031 1.937s1.844 3.109 1.937 5.031c0.094 1.656 0.078 3.297 0.078 4.953z"></path></svg></a>
+        <a title="Pinterest" href="https://pinterest.com/m" target="_blank" rel="no-follow"  class="pinterest"><svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 28"><path d="M0 9.328c0-5.766 5.281-9.328 10.625-9.328 4.906 0 9.375 3.375 9.375 8.547 0 4.859-2.484 10.25-8.016 10.25-1.313 0-2.969-0.656-3.609-1.875-1.188 4.703-1.094 5.406-3.719 9l-0.219 0.078-0.141-0.156c-0.094-0.984-0.234-1.953-0.234-2.938 0-3.187 1.469-7.797 2.188-10.891-0.391-0.797-0.5-1.766-0.5-2.641 0-1.578 1.094-3.578 2.875-3.578 1.313 0 2.016 1 2.016 2.234 0 2.031-1.375 3.938-1.375 5.906 0 1.344 1.109 2.281 2.406 2.281 3.594 0 4.703-5.187 4.703-7.953 0-3.703-2.625-5.719-6.172-5.719-4.125 0-7.313 2.969-7.313 7.156 0 2.016 1.234 3.047 1.234 3.531 0 0.406-0.297 1.844-0.812 1.844-0.078 0-0.187-0.031-0.266-0.047-2.234-0.672-3.047-3.656-3.047-5.703z"></path></svg></a>
+        <a title="Twitter" href="https://twitter.com/" target="_blank" rel="no-follow"  class="twitter"><svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 28"><path d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z"></path></svg></a>
+        
+    </div>
+    <div data-h="legal-links" data-testid="legal-links" class="X">
+        <a href="/world/en/company/membership" data-h="legal-link" data-testid="legal-link" class="k">Handy+ Membership </a>
+        <a href="/world/en/company/membership" data-h="legal-link" data-testid="legal-link" class="v">Terms and Conditions</a>
+        <a href="/world/en/company/membership" data-h="legal-link" data-testid="legal-link" class="w">Privacy Policy</a>
+            <div data-h="legal-link-text" data-testid="legal-link-text" class="z">© 2023  Inc.</div>
+    </div>
+
+</footer>
+
+</body>
+</html>
